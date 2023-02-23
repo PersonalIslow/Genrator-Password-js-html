@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Генератор символов</title>
+</head>
+<body>
+	<h1>Генератор символов</h1>
+	<form>
+		<label for="num-characters">Количество символов:</label>
+		<input type="number" id="num-characters" name="num-characters" min="1" max="100" value="8">
+		<br><br>
+		<label for="use-uppercase">Использовать заглавные буквы:</label>
+		<input type="checkbox" id="use-uppercase" name="use-uppercase">
+		<br><br>
+		<label for="use-lowercase">Использовать строчные буквы:</label>
+		<input type="checkbox" id="use-lowercase" name="use-lowercase" checked>
+		<br><br>
+		<label for="use-numbers">Использовать цифры:</label>
+		<input type="checkbox" id="use-numbers" name="use-numbers" checked>
+		<br><br>
+		<label for="use-symbols">Использовать специальные символы:</label>
+		<input type="checkbox" id="use-symbols" name="use-symbols">
+		<br><br>
+		<button type="button" id="generate-button">Сгенерировать</button>
+		<br><br>
+		<label for="result">Результат:</label>
+		<input type="text" id="result" name="result" readonly>
+	</form>
+	<script src="generator.js"></script>
+</body>
+</html>
